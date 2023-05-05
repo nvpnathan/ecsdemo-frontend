@@ -5,10 +5,10 @@ on:
     tags:
       - .*
 env:
-  ECR_REPOSITORY: ecsdemo-frontend
-  ECS_SERVICE: ecsdemo-frontend
+  ECR_REPOSITORY: gh-action-demo
+  ECS_SERVICE: ex-github-action
   ECS_CLUSTER: core-infra
-  CONTAINER_NAME: ecsdemo-frontend
+  CONTAINER_NAME: ex-github-action
   
 defaults:
   run:
@@ -30,7 +30,7 @@ jobs:
         with:
           aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
           role-to-assume: ${{ secrets.AWS_IAM_ROLE }}
-          role-duration-seconds: 900
+          role-duration-seconds: 300
           role-session-name: ecsdemo-frontend
       
       - name: Login to Amazon ECR
