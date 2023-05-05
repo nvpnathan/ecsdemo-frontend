@@ -31,7 +31,7 @@ jobs:
           aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
           role-to-assume: ${{ secrets.AWS_IAM_ROLE }}
           role-duration-seconds: 900
-          role-session-name: ecsdemo-frontend
+          role-session-name: gh-action-demo
       
       - name: Login to Amazon ECR
         id: login-ecr
