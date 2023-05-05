@@ -1,6 +1,6 @@
 name: Deploy to Amazon ECS
 on:
-  create:
+  push:
     branches: [ main ]
     tags:
       - .*
