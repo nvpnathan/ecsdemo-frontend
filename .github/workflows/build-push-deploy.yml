@@ -8,7 +8,7 @@ env:
   ECR_REPOSITORY: gh-action-demo
   ECS_SERVICE: ex-github-action
   ECS_CLUSTER: core-infra
-  CONTAINER_NAME: ex-github-action
+  CONTAINER_NAME: gh-action-demo
   
 defaults:
   run:
